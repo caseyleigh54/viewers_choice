@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Viewer's Choice - Rhythm of Food</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Spring 2018 Visualization and Visual Analytics</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/rhythm-of-food-small-logo.png" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#datacollection">The Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#built">How it's Built</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#explore">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#colorblind">Colorblindness</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#good">What Works...</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#bad">What Doesn't Work...</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#improvements">Improvements</a>
+          </li>
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="home">
+        <div class="my-auto">
+          <h1 class="mb-0">The Muller Investigation 
+	  </h1>
+	<center><img src = "img/trump-muller.jpg" alt = "banner-logo" style = "width:90%; height:auto;">
+	</center>
+	<br><br><a href="http://rhythm-of-food.net/"><p style="font-size:20px; line-height: 200%;padding-left: 10%; padding-right: 10%">Connections and Patterns in the Muller Investigation </a>was developed by Fathom using a tool called Porfiry that deconstructs documents using algorithms and finalizes these results with custom curation tools. The documents are used as a collection of data points. The data extracted from court filings and news articles about the Muller’s investigation in the Trump-Russia connection to create chronological flows for each participant. It reveals connections between this data that would not have been obvious otherwise.  </p> </br>
+  
+  </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="datacollection">
+        <div class="my-auto">
+          <h2 class="mb-5">The Data</h2>
+	<center><img src = "img/nyt.jpg" alt = "gtrend_logo" style = "width: 100%; height:auto">
+	</center>  <br><br>    
+  <p style="font-size:20px; line-height: 200%;padding-left: 10%; padding-right: 10%">
+    The data comes from the Muller Investigation court filings and any news articles from The New York Times. Custom tools were used to curate machine learning outputs from this data. </p>
+  <p style="font-size:20px; line-height: 200%;padding-left: 10%; padding-right: 10%">
+    Each data point is where a person of interest is mentioned and the approximate date that the article references. This gives a timespan for all of the information rather than just the article publish dates. 
+    
+    </p>
+ </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="built">
+        <div class="my-auto">
+          <h2 class="mb-5">How the plots were built</h2>
+	<video controls muted style="display:block; margin:0 auto;" width="85%" autoplay loop> 
+		<source src = "video/data.mov" >
+  </video><br>
+  <h3 style="padding-left: 9%;padding-right: 9%">Data Representation</h3>
+  <p style="font-size:20px; line-height: 200%;padding-left: 10%; padding-right: 10%">
+    As seen in the animation above, the plots are very dense with data.</p>
+	<ul style="font-size:20px; line-height: 200%;padding-left: 10%; padding-right: 10%">
+		<li>Each circle represents 1+ articles about that person and 0+ about other people connected to that person in any of the articles</li>
+<li>A solid circle represents connections to other people</li>
+<li>An empty circle repreents only connections to that person</li>
+<li>They are ordered by date reference of the event not the date of the article publishes</li>
+<li>All of the data points are then places as a row for each person that spans across a timeline in years</li>
+<li>The scale is approximately from 1987 – February 2019</li>
+<li>Trends can be seen with the largest circles and proximity of circles</li>
+<li>The stars at the top tell you significant dates relevant to the data </li>
+
+	</ul>
+ 	</div>
+      </section>
+      
+	<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="explore">
+        <div class="my-auto">
+          <h2 class="mb-5">Explore</h2>
+	<video style="display:block; margin:0 auto;" width="85%" autoplay loop> 
+		<source src = "video/explore.mov" >
+	</video><br>
+  <p style="font-size:20px; line-height: 200%;padding-left: 10%; padding-right: 10%">
+    The focus of the visualization is on highlighting connections between participants that would not have been obvious otherwise.
+    Each data point can be selected which highlights connections with a line between participants referenced 
+    from the data point. The articles that reference these people can be seen which highlights the areas 
+    where their names are mentioned. The links to these articles are also attached and you can then select 
+    on them to read further. 
+    </p>
+ 	</div>
+      </section>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="colorblind">
+          <div class="my-auto">
+            <h2 class="mb-5">Colorblind Friendliness</h2>
+    
+            <div class="row">
+              <div class="column">
+                <img src="img/green.png" alt="Snow" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="img/blue-t.png" alt="Forest" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="img/red-p.png" alt="Mountains" style="width:100%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <b>Anomalous Trichromacy: Red-Weak/Protanomaly</b>
+              </div>
+              <div class="column">
+                <b>Anomalous Trichromacy: Green-Weark/Deuteranomaly</b>
+              </div>
+              <div class="column">
+                <b>Anomalous Trichromacy: Blue-Weak/Tritanomaly</b>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="column">
+                <img src="img/green-t.png" alt="Snow" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="img/blue-monoch.png" alt="Forest" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="img/monochrom.png" alt="Mountains" style="width:100%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <b>Dichromatic View: Green-Blind/Deuteranopia</b>
+              </div>
+              <div class="column">
+                <b>Monochromatic View: Blue Cone Monochromacy</b>
+              </div>
+              <div class="column">
+                <b>Monochromatic View: Monochromacy/Achromatopsia</b>
+              </div>
+            </div>
+    <br>
+    <p style="font-size:20px; line-height: 200%;padding-left: 10%; padding-right: 10%">
+      Since the data comparisons are most obvious by the shapes rather than colors it is easy to see trends. 
+      The only color used is green the black and white is very easy to distinguish when trying to see what is or isn’t selected.</p>
+    </div>
+        </section>
+	<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="good">
+        <div class="my-auto">
+          <h2 class="mb-5">What Works...</h2>
+  
+          <div class="row">
+              <div class="column-2">
+                <img src="img/connections.png" alt="Snow" style="width:100%">
+              </div>
+              <div class="column-2">
+                <img src="img/info.png" alt="Forest" style="width:100%">
+              </div>
+            </div>
+            <br>
+            <br>
+ 	<p>
+      If you want to look deeper into the connections made by the Muller investigation and which people are connected and how
+      you can select the people of interest and see what articles connect them. 
+      <br><br>
+     <ul style="font-size:20px; line-height: 200%;padding-left: 10%; padding-right: 10%">
+        <li>Great for visualizing connections and then being able to go into depth of these connections.</li>
+        <li>Easily see the chronological timeline of events for each person and where they link in the timeline</li>
+        <li>It is easy to see who is connected to the person featured as they are highlighted green.</li>
+      <li>The people with the most connections to the featured person move to the top of the list. You don't have to scroll through people who aren't connected to find them</li>
+      </ul>
+    </p>
+	</div>
+      </section>
+
+	<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="bad">
+        <div class="my-auto">
+          <h2 class="mb-5">What Doesn't Work...</h2>
+  <center><img src = "img/bad.png" alt = "cosmo" style = "width: 75%; height:auto"></center>
+  <br>
+ 	<p>Someone’s name might not specifically be mentioned in an article however doesn’t mean they weren’t involved. 
+     You can search manually through and “find” and event but there’s no easy way to do this since its mapped by years it’s difficult to 
+     find the month and date of where it is. You are only able to see events that are predefined at the top.
+     You also cannot see 
+     who else is connected if they are father down.
+     You can't select more than one person to see their connections.
+     For example if you wanted to see Putin's and Trump's connections you can't select on both.
+    </p>
+	</div>
+      </section>
+	
+	<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="improvements">
+        <div class="my-auto">
+          <h2 class="mb-5">Improvements</h2>
+	<center><img src = "img/main2.jpg" alt = "cosmo" style = "width: 60%; height:auto"></center>
+ 	<p>
+      All of their data comes from the New York Times and the Muller Reports. 
+      The NYT is highly factual and one of the most reliable sources in terms of news. 
+      However, since it is the only source other than the Muller reports things you want to 
+      see may not be in there. Additionally, adding the ability to search for certain events 
+      would be helpful when trying to find select pieces of information. On a regular screen you 
+      can’t see where the data points go which is not very user friendly since you have to scroll down.
+     
+   </p>
+	</div>
+      </section>
+	
+	
+  
+	<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
+        <div class="my-auto">
+          <h2 class="mb-5">About</h2>
+	<div>
+	<p>Author: Casey Charlesworth</p>
+	<p>Class: CS424 - Data Visualization
+	</div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>
